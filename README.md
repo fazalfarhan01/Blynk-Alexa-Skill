@@ -29,6 +29,7 @@
 
 ## 2. Next Step - Code
 1. Clone this repo.
+2. Modify [lambda\config.json](lambda/config.json) accordingly.
 2. Create a Pithon Virtual Environment.
 3. Install all the dependencies from [requirements.txt](lambda/requirements.txt)
 4. Copy all the files from site-packages to lambda folder.
