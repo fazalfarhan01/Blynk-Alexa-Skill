@@ -17,7 +17,7 @@
 7. Create an intent named ___ControlIntent___ (Case Sensitive).
 ![Control Intent](assets/otherImages/AddControlIntent.png)
 8. Set Sample Utterances
-![Sample Utterances](assets\otherImages\SetSampleUtterances.png)
+![Sample Utterances](assets/otherImages/SetSampleUtterances.png)
 9. Create Slots
    1. Appliances
    ![Slots-Appliances](assets/otherImages/CreateSlots(Appliances).png)
@@ -29,7 +29,7 @@
 
 ## 2. Next Step - Code
 1. Clone this repo.
-2. Modify [lambda\config.json](lambda/config.json) accordingly.
+2. Modify [lambda/config.json](lambda/config.json) accordingly.
 2. Create a Pithon Virtual Environment.
 3. Install all the dependencies from [requirements.txt](lambda/requirements.txt)
 4. Copy all the files from site-packages to lambda folder.
@@ -41,9 +41,9 @@ AWS-CLI can also be used but I prefer VS Code.
 2. Install [Alexa Skill Kit (ASK) Toolkit](https://marketplace.visualstudio.com/items?itemName=ask-toolkit.alexa-skills-kit-toolkit).
 3. Open the extension and login with the same credentials as before.
 4. Click on download and edit skill from side bar.
-![Download and Edit Skill](assets\otherImages\DownloadandEditSkill.png)
+![Download and Edit Skill](assets/otherImages/DownloadandEditSkill.png)
 5. Select the Skill you created earlier.
-![Skill Selection](assets\otherImages\skillSelection.png)
+![Skill Selection](assets/otherImages/skillSelection.png)
 6. Wait for it to complete the cloning.
 7. Copy all the files in the lambda folder in the GitHub cloned repo to ASK cloned repo.
 8. Commit the changes. Sync the changes. Wait for some time and then deploy from the VS Code plugin.
