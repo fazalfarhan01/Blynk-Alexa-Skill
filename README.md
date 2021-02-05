@@ -17,7 +17,7 @@
 7. Create an intent named ___ControlIntent___ (Case Sensitive).
 ![Control Intent](assets/otherImages/AddControlIntent.png)
 8. Set Sample Utterances
-![Sample Utterances](assets\otherImages\SetSampleUtterances.png)
+![Sample Utterances](assets/otherImages/SetSampleUtterances.png)
 9. Create Slots
    1. Appliances
    ![Slots-Appliances](assets/otherImages/CreateSlots(Appliances).png)
