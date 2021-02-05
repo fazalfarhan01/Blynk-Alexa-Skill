@@ -1,0 +1,212 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "blink server",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "JokeIntent",
+          "slots": [],
+          "samples": [
+            "joke please",
+            "tell a joke",
+            "say a joke",
+            "tell me a joke"
+          ]
+        },
+        {
+          "name": "ControlIntent",
+          "slots": [
+            {
+              "name": "Appliances",
+              "type": "Appliances",
+              "samples": [
+                "bed light",
+                "dims",
+                "side light",
+                "fan two",
+                "fan one",
+                "lights"
+              ]
+            },
+            {
+              "name": "Action",
+              "type": "Action",
+              "samples": [
+                "off",
+                "on"
+              ]
+            }
+          ],
+          "samples": [
+            "turn {Action} {Appliances}",
+            "turn {Appliances} {Action}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "side light"
+              }
+            },
+            {
+              "name": {
+                "value": "bed light"
+              }
+            },
+            {
+              "name": {
+                "value": "dims"
+              }
+            },
+            {
+              "name": {
+                "value": "fan two"
+              }
+            },
+            {
+              "name": {
+                "value": "fan one"
+              }
+            },
+            {
+              "name": {
+                "value": "lights"
+              }
+            }
+          ],
+          "name": "Appliances"
+        },
+        {
+          "values": [
+            {
+              "id": "0",
+              "name": {
+                "value": "off"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "on"
+              }
+            }
+          ],
+          "name": "Action"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "ControlIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Appliances",
+              "type": "Appliances",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1540609232218.757579083425"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1427054232617.326266870881.601115682977"
+                }
+              ]
+            },
+            {
+              "name": "Action",
+              "type": "Action",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1540609232218.154987265032"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1427054232617.764939900736.784399372752"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1540609232218.757579083425",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What device to on or off?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1540609232218.154987265032",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I did not quiet get that. On or Off?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1427054232617.326266870881.601115682977",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Not sure I got that. Come Again please?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1427054232617.764939900736.784399372752",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I not sure I understood that."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "13"
+}

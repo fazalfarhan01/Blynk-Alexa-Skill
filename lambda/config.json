@@ -1,0 +1,19 @@
+{
+    "auth_token": "REPLACE_WITH_BLYNK_AUTH_TOKEN",
+    "server_name": "BLYNK_SERVER_NAME eg:blynk-cloud.com DO NOT INCLUDE http or https",
+    "server_port": 8080,
+    "appliance": {
+        "lights": "V0",
+        "dims": "V1",
+        "fan one": "V2",
+        "fan two": "V3",
+        "bed light": "V4",
+        "side light": "V5",
+        "fan 1": "V2",
+        "fan 2": "V3"
+    },
+    "action": {
+        "on": 1,
+        "off": 0
+    }
+}
