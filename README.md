@@ -1,5 +1,7 @@
 # Blynk Alexa Skill
 
+## Demo [YouTube Video](https://youtu.be/-QCHVpMyGWA)
+
 ### Content
 1. Getting Started
 2. Python Setup & Code
